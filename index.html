@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tetris</title>
+
+ <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+<canvas id="my-canvas" width="300" height="300" class="displaynone"></canvas>
+
+
+<div id="start"class="start">
+<h1 id="tetrisnadpis">Tetris</h1>
+<h2 id="levelpick">Starting Level:</h2>
+<label for="vol" id="labelfor" >Levels 1 - 10</label>
+<input type="range" value="3" onchange="this.textContent ='vol.value'"id="vol" name="vol" min="1" max="10">
+<span id="levelvalue">10</span>
+
+<button type="button" id="playbutton" name="button">Start Game!</button>
+
+</div>
+
+
+
+<script type="text/javascript" src="main.js">
+
+</script>
+  </body>
+</html>
