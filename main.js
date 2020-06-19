@@ -79,6 +79,7 @@ function SetupCanvas() { //Vytvoří plátno
   ctx = canvas.getContext("2d")
   canvas.width = 936;
   canvas.height = 956;
+document.getElementById("start").style.display = "none"
 
 if (window.innerHeight >= 937) {
   ctx.scale(1.95, 1.95) //Double the size of elements.
@@ -459,6 +460,7 @@ function CheckForCompletedRows() {
                   // Draw the square as white
                   ctx.fillStyle = 'white';
                   ctx.fillRect(coorX, coorY, 21, 21);
+
               }
           }
       }
@@ -479,6 +481,8 @@ function CheckForCompletedRows() {
           ctx.fillStyle = 'black';
           ctx.fillText(score.toString(), 310, 127);
           MoveAllRowsDown(rowsToDelete, startOfDeletion);
+
+  
       }
 
 }
